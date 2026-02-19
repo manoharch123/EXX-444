@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Awesome Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ===== First Row ===== */
+        .top {
+            display: flex;
+            height: 120px;
+            background-color: #e2e5e9;
+            align-items: center;
+        }
+
+        .logo {
+            width: 30%;
+            text-align: center;
+        }
+
+        .logo img {
+            vertical-align: middle;
+        }
+
+        .header {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-box {
+            background-color: #2f5569;
+            padding: 15px 80px;
+        }
+
+        .header-box h1 {
+            color: orange;
+            margin: 0;
+            font-size: 38px;
+        }
+
+        /* ===== Second Row ===== */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #b7d1dc;
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #2f5569;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== Third Row ===== */
+        .bottom {
+            display: flex;
+            height: 450px;
+        }
+
+        .services {
+            width: 30%;
+            background-color: #c8e0d0;
+            padding: 40px 30px;
+        }
+
+        .services h2 {
+            text-align: center;
+        }
+
+        .services a {
+            display: block;
+            text-decoration: none;
+            color: #2f5569;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .content {
+            width: 70%;
+            padding: 50px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- First Row -->
+    <div class="top">
+        <div class="logo">
+            <h2>LOGO</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                 width="70" height="70" alt="Logo">
+        </div>
+
+        <div class="header">
+            <div class="header-box">
+                <h1>My Awesome Website</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="menu">
+        <a href="home.html" target="frame">Home</a>
+        <a href="login.html" target="frame">Login</a>
+        <a href="registration.html" target="frame">Registration</a>
+        <a href="catalogue.html" target="frame">Catalogue</a>
+        <a href="cart.html" target="frame">Cart</a>
+        <a href="contact.html" target="frame">Contact Us</a>
+    </div>
+
+    <!-- Third Row -->
+    <div class="bottom">
+
+        <!-- Services -->
+        <div class="services">
+            <h2>Services</h2>
+            <a href="webdesign.html" target="frame">Web Design</a>
+            <a href="hosting.html" target="frame">Hosting</a>
+            <a href="support.html" target="frame">Support</a>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <iframe name="frame" src="welcome.html"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
